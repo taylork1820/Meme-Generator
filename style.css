@@ -154,7 +154,7 @@ div.aligning {
 
   #main {
     position: relative;
-    left: 140px;
+    left: 12px;
     height: 250px;
     width: 200px;
   }
@@ -167,7 +167,7 @@ div.aligning {
 
   #memes {
     position: relative;
-    left: 160px;
+    left: 30px;
     display: inline;
   }
 
