@@ -142,3 +142,41 @@ div.aligning {
 .memeSection {
   position: relative;
 }
+
+@media only screen and (max-width: 500px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    font-size: 10px;
+  }
+
+  #main {
+    position: relative;
+    left: 12px;
+    height: 250px;
+    width: 200px;
+  }
+
+  label {
+    position: relative;
+    left: 0;
+    display: inline;
+  }
+
+  #memes {
+    position: relative;
+    left: 30px;
+    display: inline;
+  }
+
+  .text1 {
+    position: absolute;
+    width: 40%;
+  }
+
+  .text2 {
+    position: absolute;
+    width: 40%;
+  }
+}
