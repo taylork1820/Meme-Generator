@@ -98,11 +98,14 @@ div.aligning {
 }
 
 #memes {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flexbox;
   padding: 10px;
-  width: 15%;
+  position: relative;
+  left: 600px;
+}
+
+img {
+  width: 300px;
 }
 
 #submit-btn {
@@ -154,7 +157,7 @@ div.aligning {
 
   #main {
     position: relative;
-    left: 12px;
+    left: 140px;
     height: 250px;
     width: 200px;
   }
@@ -167,7 +170,7 @@ div.aligning {
 
   #memes {
     position: relative;
-    left: 30px;
+    left: 100px;
     display: inline;
   }
 

@@ -47,10 +47,3 @@ submitBtn.addEventListener('click', function (e) {
     gallery.removeChild(deleteBtn);
   });
 });
-
-
-
-//6. You set a lot of classes to the elements that constitute a meme. Classes are a good way to control application of styles, but you could also use css selectors like :nth-child(2) and similar in this exercise
-//7. It would be great to decompose your single function that creates a meme into several smaller ones - the code will get easier to read and manage. Let's discuss this on our next call.
-//8. Optional, but leads to cleaner dom: you could wrap the meme and it's delete button in an enclosing element (e.g. div) to highlight that they live (and, well,  die) together
-//9. In your styles you have a lot of explicitly set margins and tops/lefts. This usually indicates a lack of flexibility of styles and string reliance on a particular size of a screen. What can really help here is the flexbox. Please check this page - https://css-tricks.com/snippets/css/a-guide-to-flexbox/ - and try to use a flexbox to render the memes and the form - you may notice how much cleaner and shorter your css will become. 
