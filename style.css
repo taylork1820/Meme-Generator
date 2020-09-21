@@ -26,20 +26,21 @@ header {
 }
 
 #main {
-  position: relative;
-  left: 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   text-align: center;
   height: 180px;
-  width: 600px;
+  width: 100%;
   padding: 10px;
-  margin: 10px;
-  background-color: black;
   color: white;
 }
 
 #form {
-  margin: 10px;
   padding: 2px;
+  width: 500px;
+  background-color: black;
+
 }
 
 .text1 {
@@ -98,14 +99,16 @@ div.aligning {
 }
 
 #memes {
-  display: flexbox;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   padding: 10px;
   position: relative;
-  left: 600px;
+  width: 100%;
 }
 
 img {
-  width: 300px;
+  width: 100%;
 }
 
 #submit-btn {
@@ -135,9 +138,10 @@ img {
   background: black;
   color: white;
   font-size: 1.5em;
-  position: relative;
-  left: -10px;
-  top: -315px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
   height: 30px;
   width: 30px;
   margin: 10px;
@@ -145,6 +149,7 @@ img {
 
 .memeSection {
   position: relative;
+  width: 500px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -184,3 +189,11 @@ img {
     width: 40%;
   }
 }
+
+/* 1. Form layout is somewhat broken (see screenshot)
+2. The texts are not centered horizontally (see screenshot) (it's now a matter of a one-line css fix)
+3. The images are not centered - a bit off to the right (see screenshot) 
+4. Items 6-8 from the original review are still relevant.
+
+A particular thing that causes issues here is an explicit 15% width on the #memes control. Try to remove it and make it a flexbox that arranges the content in a column and centers it. Once you push the delete button inside the meme, that will make a lot of things easier.
+*/

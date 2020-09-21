@@ -36,7 +36,7 @@ submitBtn.addEventListener('click', function (e) {
   memeSection.appendChild(txtInput1);
   memeSection.appendChild(txtInput2);
   gallery.appendChild(memeSection);
-  gallery.appendChild(deleteBtn);
+  memeSection.appendChild(deleteBtn);
 
   imageLink.value = '';
   upperText.value = '';
